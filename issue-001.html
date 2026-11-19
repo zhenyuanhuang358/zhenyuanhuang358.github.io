@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>海外机构研究中文精选 · 第 001 期（2026-11-09–16）— 黄振远</title>
+    <meta name="description" content="海外机构研究中文精选第 001 期样刊：覆盖 2026 年 11 月 9–16 日，8 条海外机构公开研究的中文精选，主线为 AI 算力融资与数据中心政策风险，叠加黄金在美联储加息预期下的韧性。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+      :root {
+        --bg: #f8f8f5;
+        --surface: #ffffff;
+        --surface-2: #f0f1ec;
+        --ink: #1d201c;
+        --ink-2: #4c514a;
+        --ink-3: #7c8178;
+        --line: #e0e2da;
+        --accent: #2e5e43;
+        --accent-soft: #e6efe8;
+        --warn-bg: #faf3e7;
+        --warn-line: #e3d3ae;
+        --warn-ink: #6d5420;
+        --red: #a33b2e;
+        --radius: 14px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #131511;
+          --surface: #1b1e19;
+          --surface-2: #22261f;
+          --ink: #e9eae4;
+          --ink-2: #b7bbb0;
+          --ink-3: #878c80;
+          --line: #2e322a;
+          --accent: #8fbc9c;
+          --accent-soft: #22352a;
+          --warn-bg: #2b2517;
+          --warn-line: #57482a;
+          --warn-ink: #d9bd7a;
+          --red: #e08a7c;
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 880px; margin: 0 auto; padding: 0 22px; }
+      h1, h2, h3 { font-family: "Noto Serif SC", "Songti SC", serif; line-height: 1.35; margin: 0; }
+      p { margin: 0; }
+      a { color: var(--accent); }
+
+      /* ---------- nav ---------- */
+      .topnav {
+        position: sticky; top: 0; z-index: 10;
+        background: color-mix(in srgb, var(--bg) 88%, transparent);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+      }
+      .topnav .wrap { display: flex; align-items: center; gap: 4px; padding-top: 6px; padding-bottom: 6px; overflow-x: auto; scrollbar-width: none; }
+      .topnav .wrap::-webkit-scrollbar { display: none; }
+      .topnav .brand { font-family: "Noto Serif SC", serif; font-weight: 900; font-size: 17px; color: var(--ink); text-decoration: none; margin-right: 8px; white-space: nowrap; padding: 8px 2px; }
+      .topnav a.navlink {
+        color: var(--ink-2); text-decoration: none; font-size: 14.5px;
+        padding: 10px 8px; min-height: 40px; display: inline-flex; align-items: center;
+        border-radius: 8px; white-space: nowrap;
+      }
+      .topnav a.navlink:hover { color: var(--ink); background: var(--surface-2); }
+
+      /* ---------- hero ---------- */
+      .hero { padding: 56px 0 8px; }
+      .hero-top { display: flex; gap: 26px; align-items: center; }
+      .avatar {
+        width: 108px; height: 108px; border-radius: 50%; object-fit: cover; object-position: 50% 28%; flex: none;
+        border: 1px solid var(--line); background: var(--surface-2);
+      }
+      .hero h1 { font-size: 40px; font-weight: 900; letter-spacing: .01em; }
+      h1 .en { font-size: 21px; font-weight: 700; color: var(--ink-2); letter-spacing: .03em; white-space: nowrap; }
+      .hero .role { margin-top: 6px; color: var(--ink-2); font-size: 15.5px; }
+      .tagline {
+        margin-top: 30px; font-family: "Noto Serif SC", serif;
+        font-size: clamp(22px, 4.6vw, 30px); font-weight: 700; line-height: 1.5;
+      }
+      .tagline .accent { color: var(--accent); }
+      .intro { margin-top: 18px; color: var(--ink-2); font-size: 16px; max-width: 640px; }
+      .intro strong { color: var(--ink); font-weight: 700; }
+      .hero-cta { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; }
+      .btn {
+        display: inline-flex; align-items: center; justify-content: center;
+        min-height: 46px; padding: 10px 22px; border-radius: 10px;
+        font-size: 15px; font-weight: 700; text-decoration: none;
+      }
+      .btn-primary { background: var(--accent); color: #fff; }
+      @media (prefers-color-scheme: dark) { .btn-primary { color: #10150f; } }
+      .btn-ghost { border: 1px solid var(--line); color: var(--ink); background: var(--surface); }
+
+      /* ---------- sections ---------- */
+      section { padding: 52px 0 6px; }
+      .sec-head { display: flex; align-items: baseline; gap: 14px; border-bottom: 2px solid var(--ink); padding-bottom: 12px; margin-bottom: 30px; }
+      .sec-head .no { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--accent); font-weight: 500; }
+      .sec-head h2 { font-size: 26px; font-weight: 900; }
+      .sec-head .en { margin-left: auto; font-size: 12px; letter-spacing: .14em; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; text-transform: uppercase; }
+
+      /* timeline */
+      .timeline { list-style: none; margin: 0; padding: 0; }
+      .timeline li { display: grid; grid-template-columns: 128px 1fr; gap: 8px 22px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+      .timeline li:first-child { padding-top: 4px; }
+      .timeline .years { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--accent); font-weight: 500; padding-top: 4px; line-height: 1.55; }
+      .timeline h3 { font-size: 18px; font-weight: 700; }
+      .timeline p { color: var(--ink-2); font-size: 15px; margin-top: 4px; }
+
+      .timeline .t-meta { color: var(--ink-3); font-size: 13.5px; margin-top: 2px; }
+      .timeline .result { margin-top: 10px; background: var(--surface-2); border-radius: 10px; padding: 12px 16px; font-size: 14.5px; color: var(--ink-2); line-height: 1.7; }
+      .timeline .result strong { color: var(--accent); margin-right: 8px; }
+
+      /* resume extras */
+      .resume-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 34px; }
+      .resume-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; }
+      .resume-card.wide { grid-column: 1 / -1; }
+      .resume-card h3 { font-size: 16.5px; font-weight: 700; margin-bottom: 10px; }
+      .resume-card p { color: var(--ink-2); font-size: 14.5px; line-height: 1.75; }
+      .abilities { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
+      .abilities .ab { font-size: 14.5px; color: var(--ink-2); line-height: 1.65; }
+      .abilities .ab strong { color: var(--ink); display: block; font-size: 15px; }
+
+      /* focus areas */
+      .focus { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 34px; }
+      .focus .item { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; }
+      .focus h3 { font-size: 16.5px; font-weight: 700; margin-bottom: 6px; }
+      .focus p { color: var(--ink-2); font-size: 14.5px; line-height: 1.7; }
+
+      .viewpoint {
+        margin-top: 34px; background: var(--accent-soft); border-radius: var(--radius);
+        padding: 26px 28px;
+      }
+      .viewpoint .label { font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: .08em; margin-bottom: 10px; }
+      .viewpoint p { font-family: "Noto Serif SC", serif; font-size: 17.5px; line-height: 1.8; font-weight: 600; }
+
+      /* services */
+      .service { display: grid; grid-template-columns: 52px 1fr; gap: 4px 18px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+      .service:first-of-type { padding-top: 2px; }
+      .service .num { font-family: "IBM Plex Mono", monospace; font-size: 15px; color: var(--accent); font-weight: 500; padding-top: 4px; }
+      .service h3 { font-size: 19px; font-weight: 700; }
+      .service p { color: var(--ink-2); font-size: 15px; margin-top: 6px; max-width: 620px; }
+      .service .scope { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+      .chip {
+        font-size: 13px; color: var(--ink-2); background: var(--surface-2);
+        border-radius: 999px; padding: 5px 12px; line-height: 1.5;
+      }
+
+      .contact-box {
+        margin-top: 36px; border: 1px dashed var(--ink-3); border-radius: var(--radius);
+        padding: 28px; text-align: center; background: var(--surface);
+      }
+      .contact-box h3 { font-size: 19px; font-weight: 700; margin-bottom: 8px; }
+      .contact-box p { color: var(--ink-2); font-size: 15px; max-width: 520px; margin: 0 auto; }
+
+      /* subscription */
+      .sub-block { margin-bottom: 40px; }
+      .sub-block > h3 { font-size: 20px; font-weight: 900; margin-bottom: 8px; }
+      .sub-block > .lede { color: var(--ink-2); font-size: 15.5px; max-width: 640px; }
+      .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 22px 0 6px; }
+      .stat { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 10px 14px; text-align: center; }
+      .stat .v { font-family: "IBM Plex Mono", monospace; font-size: 30px; font-weight: 500; line-height: 1.15; }
+      .stat .v.hit { color: var(--accent); }
+      .stat .v.miss { color: var(--red); }
+      .stat .k { font-size: 13px; color: var(--ink-3); margin-top: 4px; }
+      .asof { font-size: 13px; color: var(--ink-3); margin-top: 10px; }
+      .rules { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+      .rules li { font-size: 14.5px; color: var(--ink-2); background: var(--surface-2); border-radius: 10px; padding: 14px 16px; line-height: 1.65; }
+      .rules li strong { color: var(--ink); display: block; font-size: 15px; margin-bottom: 2px; }
+
+      .deliver { list-style: none; margin: 20px 0 0; padding: 0; }
+      .deliver li { display: flex; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 15.5px; align-items: baseline; }
+      .deliver li:last-child { border-bottom: none; }
+      .deliver .tick { color: var(--accent); font-weight: 700; flex: none; }
+      .deliver li span.note { color: var(--ink-3); font-size: 14px; }
+
+      .pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 24px; }
+      .price-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 26px; }
+      .price-card.main { border: 2px solid var(--accent); }
+      .price-card .plan { font-size: 14px; font-weight: 700; color: var(--ink-2); letter-spacing: .04em; }
+      .price-card .amount { font-family: "IBM Plex Mono", monospace; font-size: 34px; font-weight: 500; margin: 8px 0 4px; }
+      .price-card .amount small { font-size: 15px; color: var(--ink-3); font-family: "Noto Sans SC", sans-serif; }
+      .price-card p { font-size: 14px; color: var(--ink-2); }
+      .price-notes { margin-top: 16px; font-size: 14px; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 8px 22px; }
+
+      .risk {
+        margin-top: 26px; background: var(--warn-bg); border: 1px solid var(--warn-line);
+        border-radius: var(--radius); padding: 22px 26px;
+      }
+      .risk .label { font-weight: 700; color: var(--warn-ink); font-size: 14.5px; margin-bottom: 6px; letter-spacing: .04em; }
+      .risk p { font-size: 14px; color: var(--warn-ink); line-height: 1.75; }
+
+      footer { margin-top: 60px; border-top: 1px solid var(--line); padding: 30px 0 46px; }
+      footer p { font-size: 13.5px; color: var(--ink-3); line-height: 1.8; }
+      footer .fine { margin-top: 10px; }
+
+      @media (max-width: 640px) {
+        .hero { padding-top: 38px; }
+        .hero-top { gap: 18px; }
+        .avatar { width: 84px; height: 84px; }
+        .hero h1 { font-size: 32px; }
+        .timeline li { grid-template-columns: 1fr; gap: 2px; }
+        .focus { grid-template-columns: 1fr; }
+        .stats { grid-template-columns: repeat(2, 1fr); }
+        .rules { grid-template-columns: 1fr; }
+        .pricing { grid-template-columns: 1fr; }
+        .resume-grid { grid-template-columns: 1fr; }
+        .abilities { grid-template-columns: 1fr; }
+        .service { grid-template-columns: 38px 1fr; }
+        section { padding-top: 42px; }
+      }
+    </style>
+    <style>
+      .issue-item { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; margin: 14px 0; }
+      .issue-item h3 { margin: 0 0 8px; font-size: 1.05rem; line-height: 1.5; }
+      .issue-item .stars { color: var(--accent); white-space: nowrap; }
+      .issue-item .src { color: var(--ink-3); font-size: .85rem; overflow-wrap: anywhere; }
+      .issue-item p { line-height: 1.8; margin: 8px 0; }
+      .issue-cat { margin: 28px 0 4px; font-size: 1.15rem; }
+      .back { margin: 8px 0 0; }
+    </style>
+  </head>
+  <body>
+    <main style="max-width: 860px; margin: 0 auto; padding: 28px 20px 40px;">
+      <p class="back"><a href="index.html">← 返回黄振远个人网站</a> · <a href="index.html#subscribe">订阅</a></p>
+      <section>
+        <div class="sec-head">
+          <span class="no">001</span>
+          <h2>海外机构研究中文精选 · 第 001 期</h2>
+          <span class="en">Issue 001</span>
+        </div>
+        <p class="lede">覆盖周期：2026 年 11 月 9–16 日 · 出刊：2026-11-17 · 第 001 期样刊，本期共 8 条。本刊只用公开信源，每条附原文链接；摘要为结构化重构，非全文翻译；解读为编辑分析，不构成投资建议。</p>
+        <p class="lede"><strong>卷首：</strong>本周主线是 AI 算力融资与数据中心政策风险，叠加黄金在美联储加息预期下的韧性。本周无符合主题的期权/波动率新条目，餐饮类无新条目。</p>
+        <h2 class="issue-cat">AI 与算力融资</h2>
+        <article class="issue-item">
+          <h3>1. Russell Investments《How will the AI infrastructure boom be financed?》 <span class="stars">★★★</span></h3>
+          <p class="src">出处：Russell Investments，2026-11-13。原文：<a href="https://www.hfbestideas.com/research/how-will-the-ai-infrastructure-boom-be-financed-c115fe9e">https://www.hfbestideas.com/research/how-will-the-ai-infrastructure-boom-be-financed-c115fe9e</a></p>
+          <p><strong>摘要：</strong>AI 基建支出正在变成一个跨资产融资周期。超大规模商 2026 年资本开支约 6,970 亿美元，债市最多可承接其中三分之一，剩余部分要靠其他融资渠道补齐。作者强调，接下来要区分的是有持续现金流支撑的项目和纯烧钱的项目，两者的融资成本与可持续性完全不同。</p>
+          <p><strong>解读：</strong>这条与记分卡和 AI 抛售主线直接相关——AI 交易下一阶段拼的不是需求故事，而是谁的现金流撑得住资本开支。看美股 AI 标的时，先看自由现金流再看增速。</p>
+        </article>
+        <article class="issue-item">
+          <h3>2. Capital Group《Midterm impacts on AI data centers, tariffs and Iran》 <span class="stars">★★</span></h3>
+          <p class="src">出处：Capital Group，2026-11-13。原文：<a href="https://www.hfbestideas.com/research/midterm-impacts-on-ai-data-centers-tariffs-and-iran-6d3be172">https://www.hfbestideas.com/research/midterm-impacts-on-ai-data-centers-tariffs-and-iran-6d3be172</a></p>
+          <p><strong>摘要：</strong>中期选举之后，数据中心在地方层面的反对声音预计会转为谈判，推高建设成本与落地周期，但算力扩张的大方向不会停。同一篇还判断，贸易谈判会变得更难，美伊对峙趋于长期化，地缘溢价短期内难以完全消退。</p>
+          <p><strong>解读：</strong>数据中心的瓶颈正从「有没有钱」转向「能不能落地」——地方政治与审批是新增的成本变量，这类风险不在财报里，要单独跟踪。</p>
+        </article>
+        <article class="issue-item">
+          <h3>3. Quintet Private Bank《What happens when AI infrastructure gets harder to build?》 <span class="stars">★★★（Standout）</span></h3>
+          <p class="src">出处：Quintet Private Bank，2026-11-09。原文：<a href="https://www.hfbestideas.com/research/what-happens-when-ai-infrastructure-gets-harder-to-build-20be3158">https://www.hfbestideas.com/research/what-happens-when-ai-infrastructure-gets-harder-to-build-20be3158</a></p>
+          <p><strong>摘要：</strong>11 月 2–6 日当周半导体股下跌近 9%。作者认为，当 AI 基建越来越难建，机会正转向手握稀缺资源的公司——电力、数据中心容量与算力资源本身成为护城河；同时提醒，利率下行对估值的支撑也在减弱，不能再单靠降息逻辑持有。</p>
+          <p><strong>解读：</strong>这与期权卖方的风险结构是同一件事的两面：资源稀缺型公司波动相对可控，纯故事型标的在利率支撑减弱时最先被抛售。</p>
+        </article>
+        <article class="issue-item">
+          <h3>4. Tema ETFs《Quick Take: Electricity Is a Growth Industry》 <span class="stars">★★（Standout）</span></h3>
+          <p class="src">出处：Tema ETFs，2026-11-12。原文：<a href="https://www.hfbestideas.com/research/quick-take-electricity-is-a-growth-industry-7e1afa9f">https://www.hfbestideas.com/research/quick-take-electricity-is-a-growth-industry-7e1afa9f</a></p>
+          <p><strong>摘要：</strong>电力本身已经是成长行业。公用事业投资在 2016–2025 年间增长超过 80%，到 2030 年还有近 1.4 万亿美元投资待落地。作者指出，电气化的驱动力早已超出数据中心范畴，电网与电力供给是更宽的长期主题。</p>
+          <p><strong>解读：</strong>这是 AI 主线的「卖水人」版本——不赌哪家模型胜出，赌用电量本身。对不想追高芯片股的读者，这类资产是理解 AI 周期的另一个入口。</p>
+        </article>
+        <article class="issue-item">
+          <h3>5. ARK Invest《#533: Zipline Raises $1.5 Billion And Expands Its Partnership With Walmart, &amp; More》 <span class="stars">★（Standout）</span></h3>
+          <p class="src">出处：ARK Invest，2026-11-09。原文：<a href="https://www.hfbestideas.com/research/533-zipline-raises-1-5-billion-and-expands-its-partnership-with-49fe2d98">https://www.hfbestideas.com/research/533-zipline-raises-1-5-billion-and-expands-its-partnership-with-49fe2d98</a></p>
+          <p><strong>摘要：</strong>无人机配送公司 Zipline 以 215 亿美元估值融资 15 亿美元，并扩大与沃尔玛的合作。同篇还提到 OpenAI 广告年化收入已达 10 亿美元，以及得州新任州长拟暂停新数据中心审批带来的政策不确定性。</p>
+          <p><strong>解读：</strong>本条信息密度高但主线分散，只取一个信号：连得州都在讨论暂停数据中心审批，印证第 2 条的「落地政治」变量正在扩散。</p>
+        </article>
+        <h2 class="issue-cat">黄金与贵金属（辅助栏）</h2>
+        <article class="issue-item">
+          <h3>6. Sprott《Gold and Silver Weather a Perfect Storm as Demand Holds Firm》 <span class="stars">★★（Standout）</span></h3>
+          <p class="src">出处：Sprott，2026-11-13。原文：<a href="https://www.hfbestideas.com/research/gold-and-silver-weather-a-perfect-storm-as-demand-holds-firm-e4dd8576">https://www.hfbestideas.com/research/gold-and-silver-weather-a-perfect-storm-as-demand-holds-firm-e4dd8576</a></p>
+          <p><strong>摘要：</strong>10 月金价下跌 6.8%、银价下跌 18.7%，作者认为这更多是仓位与流动性的重置，而非需求转弱：实物与投资需求依然坚挺，黄金 ETF 持仓还创下新高。价格跌、持仓升，是本条的核心矛盾点。</p>
+          <p><strong>解读：</strong>ETF 持仓新高与价格回调并存，说明这轮下跌是交易盘出清而非配置盘撤退；对卖方而言，贵金属波动率仍在高位，定价要留足边距。</p>
+        </article>
+        <article class="issue-item">
+          <h3>7. U.S. Global Investors《Gold Has Taken Every Punch the Fed Could Throw》 <span class="stars">★★</span></h3>
+          <p class="src">出处：U.S. Global Investors，2026-11-13。原文：<a href="https://www.hfbestideas.com/research/gold-has-taken-every-punch-the-fed-could-throw-cc6a6d0e">https://www.hfbestideas.com/research/gold-has-taken-every-punch-the-fed-could-throw-cc6a6d0e</a></p>
+          <p><strong>摘要：</strong>10 年期实际收益率创 2008 年以来新高、美元走强，金价仍守在 3,880 美元附近。央行三季度购金 321 吨、同比增长 42%。作者据此认为，黄金正在接近一个持久底部。</p>
+          <p><strong>解读：</strong>央行购金是慢变量、是底不是催化剂。金价真正的短期开关在实际收益率，这与第 8 条的通胀预期背离要放在一起看。</p>
+        </article>
+        <h2 class="issue-cat">美联储与利率（辅助栏）</h2>
+        <article class="issue-item">
+          <h3>8. DoubleLine Capital《The Fed and Inflation Expectations Diverge》 <span class="stars">★★★</span></h3>
+          <p class="src">出处：DoubleLine Capital，2026-11-13。原文：<a href="https://www.hfbestideas.com/research/the-fed-and-inflation-expectations-diverge-17b8d6ee">https://www.hfbestideas.com/research/the-fed-and-inflation-expectations-diverge-17b8d6ee</a></p>
+          <p><strong>摘要：</strong>通胀预期一周内大跌 50 个基点，而市场对美联储加息的定价却在上升，两者出现背离。作者认为这种背离本身就是不稳定信号：若通胀继续回落，加息预期可能被迅速扭转，届时跨资产定价都要重估。</p>
+          <p><strong>解读：</strong>这是本期对期权卖方最重要的一条。背离意味着波动率定价建立在不稳的预期上，红灯日纪律与仓位上限不能因为盘面平静就放松。</p>
+        </article>
+        <div class="sub-block">
+          <h3>卷尾</h3>
+          <ul class="deliver">
+            <li><span class="tick">—</span><span>下周关注：英伟达财报（11 月 17 日盘后）及费城半导体指数对记分卡条目 5 的验证（11 月 18 日收盘）；海外机构财报后观点若集中转向，将加发临时快讯。</span></li>
+            <li><span class="tick">—</span><span>缺席说明：Saxo 两篇期权简报为 11 月 5–6 日，落在覆盖窗口外，未收录；餐饮类本周全页检索无相关新条目。</span></li>
+          </ul>
+          <div class="risk">
+            <p class="label">风险声明</p>
+            <p>本刊为公开研究信息的整理与个人判断，不构成投资建议，不承诺收益。引用数据均注明机构与日期，请以原文为准。</p>
+          </div>
+          <div class="pricing">
+            <div class="price-card main">
+              <p class="plan">月付</p>
+              <p class="amount">¥149<small> / 月</small></p>
+              <p>按月订阅，按月付费。</p>
+            </div>
+            <div class="price-card">
+              <p class="plan">年付</p>
+              <p class="amount">¥1,788<small> / 年</small></p>
+              <p>即 ¥149 × 12，年付无折扣。</p>
+            </div>
+          </div>
+          <div class="price-notes">
+            <span>无试用期</span>
+            <span>开通方式：通过社交平台私信联系</span>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>© 2026 黄振远 · 本站内容为个人品牌、业务与订阅的公开信息汇总。</p>
+        <p class="fine">合规说明：本站提及的雇主信息仅为公开身份与公开信息，不包含海底捞、绿茶集团的任何非公开经营数据；研究与咨询工作只使用公开数据。页面中的市场判断与信号仅供研究参考，不构成投资建议。</p>
+      </footer>
+    </main>
+  </body>
+</html>
